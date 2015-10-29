@@ -1,0 +1,23 @@
+{
+  "name": "longpolling",
+  "version": "1.0.0",
+  "description": "long polling use nodejs and ajax",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warjiang/longpolling.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/warjiang/longpolling/issues"
+  },
+  "homepage": "https://github.com/warjiang/longpolling#readme",
+  "dependencies": {
+    "mysql": "^2.9.0"
+  }
+}

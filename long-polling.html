@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+    body {
+        font-size: 18px;
+        background: #000;
+        color: #fff;
+    }
+    #container {
+        width: 600px;
+        margin: 100px auto;
+    }
+</style>
+<head>
+    <meta charset="utf-8" />
+    <title>Demo</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.min.js"></script>
+</head><body>
+<div id="container">
+    <h1>Demo</h1>
+
+    <h2>Results will appear here:</h2>
+    <ul id="results">
+    </ul>
+
+</div>
+<script>
+    $.ajaxSetup({headers: {'x-stream': 'rockon'}});
+    $(function ($) {
+        function longPoll () {
+            $.get('http://localhost:8080', function (data) {
+                console.log(data);
+                $('<li>' + data + '</li>').appendTo('#results');
+                longPoll();
+            });
+        }
+        longPoll();
+    });
+</script>
+</body>
+</html>

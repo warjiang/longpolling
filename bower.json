@@ -1,0 +1,21 @@
+{
+  "name": "longpolling",
+  "homepage": "https://github.com/warjiang/longpolling",
+  "authors": [
+    "warjiang <1096409085@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
